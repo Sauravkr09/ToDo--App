@@ -3,6 +3,7 @@ import Todo from "./Components/Todo"
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from "react-redux";
 import { actionToFetchDataFromLocal } from "./redux/actionCreator/actionsCreators";
+import Header from "./Components/Header";
 import "./App.css";
 const App = () => {
 
