@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff; /* Light text for contrast */
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Task List Box */
+.task-lists {
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.taskList-box {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b; /* Task background */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #383838; /* Hover effect */
+}
+
+.completed-task {
+    background-color: #1e3b1e; /* Green tint for completed tasks */
+}
+
+.pending-task {
+    background-color: #3b1e1e; /* Red tint for pending tasks */
+}
+
+/* Text Styling */
+.todo-text h5 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.todo-text small {
+    color: #a5a5a5; /* Muted text for dates */
+}
+
+/* Icons */
+.todo-actions .delete-icon {
+    color: #ff4c4c; /* Delete icon color */
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.todo-actions .delete-icon:hover {
+    color: #ff0000;
+}
+
+.todo-actions .toggle-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.todo-actions .toggle-icon.complete {
+    color: #00b37e; /* Green for completed */
+}
+
+.todo-actions .toggle-icon.incomplete {
+    color: #a5a5a5; /* Gray for incomplete */
+}
+
+.todo-actions .toggle-icon:hover {
+    color: #ffffff; /* Highlight on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-actions {
+        margin-top: 10px;
+    }
+
+    .delete-icon,
+    .toggle-icon {
+        font-size: 1.3rem;
+    }
+}
